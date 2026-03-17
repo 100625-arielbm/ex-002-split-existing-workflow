@@ -21,8 +21,10 @@ jobs:
 
       - name: Run linter
         run: ruff check .
-        
+
     test:
+      runs-on: ubuntu-latest
+      
       steps:
       - name: Checkout code
         uses: actions/checkout@v4
