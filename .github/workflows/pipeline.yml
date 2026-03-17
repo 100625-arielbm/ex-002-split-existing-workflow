@@ -21,7 +21,7 @@ jobs:
 
       - name: Run linter
         run: ruff check .
-jobs:
+        
     test:
       steps:
       - name: Checkout code
@@ -37,7 +37,7 @@ jobs:
 
       - name: Run linter
         run: ruff check .
-        
+
       - name: Run tests
         run: pytest test_app.py -v
 
